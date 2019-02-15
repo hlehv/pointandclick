@@ -6,6 +6,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Sidebar />
+		<background />
       </div>
     );
   }
