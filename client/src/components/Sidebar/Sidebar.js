@@ -47,13 +47,13 @@ class Sidebar extends React.Component {
         <div class="user_box">
           Aunty Sue
         </div>
-        <button type="button" onClick={() => this.handleClick()}> Close </button>
+        <button type="button" class="open_close_button" onClick={() => this.handleClick()}> Close </button>
         </div>
       );
     } else {
       console.log("hello")
       return (
-        <button type="button" onClick={() => this.handleClick()}> Open </button>
+        <button class="open_close_button" type="button" onClick={() => this.handleClick()}> Open </button>
         );
     }
   }
