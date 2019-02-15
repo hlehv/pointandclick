@@ -1,4 +1,5 @@
 import React from "react";
+import "./Background.css";
 
 import Image from '../../images/testbg.jpg'; // Import using relative path
 
