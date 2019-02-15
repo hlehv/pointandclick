@@ -9,11 +9,14 @@
   overflow-x: hidden;
   padding-top: 20px;
 }
-.sidebar a {
+.user_box {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 22px;
   color: #818181;
   display: block;
   font-family: 'IBM Plex Mono', monospace;
+  border-color: blue;
+  border-style: solid;
+  height: 40px;
 }
