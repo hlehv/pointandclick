@@ -1,5 +1,5 @@
 import React from "react";
-import "./Dock.css";
+import "./dock.css";
 
 class Dock extends React.Component {
   render() {
