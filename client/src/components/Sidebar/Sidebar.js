@@ -5,10 +5,18 @@ class Sidebar extends React.Component {
   render() {
     return (
       <div class="sidebar">
-        <a href ="#">Mom</a>
-        <a href = "#">Dad</a>
-        <a href = "#">Grandpappy</a>
-        <a href = "#">Aunty Sue</a>
+        <div class="user_box">
+          Mom
+        </div>
+        <div class="user_box">
+          Dad
+        </div>
+        <div class="user_box">
+          Grandpappy
+        </div>
+        <div class="user_box">
+        Aunty Sue
+        </div>
       </div>
     );
   }
