@@ -15,7 +15,7 @@ class Sidebar extends React.Component {
           Grandpappy
         </div>
         <div class="user_box">
-        Aunty Sue
+          Aunty Sue
         </div>
       </div>
     );
