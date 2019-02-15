@@ -5,6 +5,7 @@
 
 	<head>
 		<style>
+
 			body {
 			  background-image: url("./images/testbg.jpg");
 			  background-color: green;
@@ -42,9 +43,14 @@
 			}
 
 		</style>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<script src="https://www.w3schools.com/lib/w3data.js"></script>
+		<link rel="stylesheet" href="dock/dock.css" />
+
+
+		</style>
 		
 	</head>
-
 	<body>
 
 
@@ -54,6 +60,12 @@
 			<a href = "#">Grandpappy</a>
 			<a href = "#">Aunty Sue</a>
 		</div>
+
+		<div w3-include-html="dock/dock.html"></div>
+
+		<script>
+		w3IncludeHTML();
+		</script>
 
 		<div class="dock">
 		  <a href="#file-explorer"><i class="fas fa-folder"></i></a>
