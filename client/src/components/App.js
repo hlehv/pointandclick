@@ -7,9 +7,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-		<Background />
-        <Sidebar />
-        <dock />
+		
+	    <Background />
+        	<Sidebar />
+        	<Dock />
       </div>
     );
   }
