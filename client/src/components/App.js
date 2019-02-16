@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "./Sidebar/Sidebar";
-import Dock from "./Dock/Dock";
+import dock from "./dock/Dock";
 import Background from "./background/Background";
 
 class App extends React.Component {
@@ -9,7 +9,7 @@ class App extends React.Component {
       <div className="App">
 		<Background />
         <Sidebar />
-        <Dock />
+        <dock />
       </div>
     );
   }
