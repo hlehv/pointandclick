@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "./Sidebar/Sidebar";
-import Dock from "./dock/Dock";
+import Dock from "./Dock/Dock";
 import Background from "./background/Background";
 
 class App extends React.Component {
