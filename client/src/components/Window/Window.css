@@ -1,0 +1,11 @@
+.Window_container{
+	align-items: center;
+	width: 800px;
+	height: 500px;
+}
+
+.Window{
+	width: 100%;
+	height: 100%;
+	background-color: blue;
+}
