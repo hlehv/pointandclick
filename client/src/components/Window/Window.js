@@ -6,27 +6,58 @@ class Window extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-
+      status: 'open'
     }
+    this.name = "GOOGLE CHROME";
   }
 
   render() {
     return (
       <div class="Window_container">
-        {/*<Window_topbar/>*/}
         {this.renderWindow()}
       </div>
     );
   }
 
   handleClick = () => {
-
+    if (this.state.status === 'open'){
+      this.setState({
+        status: 'closed'
+      })
+    } 
+    else {
+      this.setState({
+        status: 'open'
+      })
+    }
   }
 
-  renderWindow(){
-    return(<div class="Window">
-      Window here
-    </div>);
+  renderWindow() {
+    if (this.state.status ==='open') {
+      return (
+        <div class="Window">
+          {this.renderTopBar()}
+        </div>
+      );
+    }
+    else {
+      return (
+        <div class="minimized-window" onClick={() => this.handleClick()}>
+          {this.name}
+        </div>
+      );
+    }
+  }
+
+  renderTopBar() {
+    return (
+      <div class="top-bar">
+        {this.name}
+        <button class="exit-button" onClick={() => this.handleClick()}>X</button>
+        <button class="exit-button">+</button>
+        <button class="exit-button">-</button>
+      </div>
+    );
   }
 }
 
