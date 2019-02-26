@@ -1,0 +1,11 @@
+.NewsSite{
+	width: 100%;
+	color: blue;
+	background-color: lightgrey;
+	height: 100%;
+}
+
+#newspaperpic{
+	overflow: hidden;
+	width: 100%;
+}
