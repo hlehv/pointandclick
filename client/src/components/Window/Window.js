@@ -1,12 +1,15 @@
 import React from "react";
 import "./Window.css";
+import NewsSite from "./NewsSite.js"
 
 
 class Window extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      status: 'open'
+      status: 'open',
+      site: '',
+      bookmarks: ['news', 'fbi database', 'mystery', 'penis']
     }
     this.name = "GOOGLE CHROME";
   }
@@ -37,6 +40,8 @@ class Window extends React.Component {
       return (
         <div class="Window">
           {this.renderTopBar()}
+          {this.renderBookmarks()}
+          {this.renderContents()}
         </div>
       );
     }
@@ -58,6 +63,31 @@ class Window extends React.Component {
         <button class="exit-button">-</button>
       </div>
     );
+  }
+
+  renderContents(){
+    if (this.state.site === 'news'){
+      return(
+        <NewsSite/>
+      )
+    }
+  }
+
+  renderBookmarks(){
+    return(
+    <div class = "Bookmarks">
+      {this.state.bookmarks.map((bookmark, index) =>
+      (
+        <button class="bookmark" key={index} onClick={() => this.handleBookmarksClick(index)}>{bookmark}</button>
+      ))}
+    </div>
+    )
+  }
+
+  handleBookmarksClick = (index) => {
+      this.setState({
+        site: this.state.bookmarks[index]
+      })
   }
 }
 
