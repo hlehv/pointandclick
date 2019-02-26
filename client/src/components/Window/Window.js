@@ -1,6 +1,7 @@
 import React from "react";
 import "./Window.css";
-import NewsSite from "./NewsSite.js"
+import NewsSite from "./Websites/NewsSite.js"
+import FBIPage from "./Websites/FBIPage.js"
 
 
 class Window extends React.Component {
@@ -9,7 +10,7 @@ class Window extends React.Component {
     this.state = {
       status: 'open',
       site: '',
-      bookmarks: ['news', 'fbi database', 'mystery', 'penis']
+      bookmarks: ['news', 'fbi', 'mystery',]
     }
     this.name = "GOOGLE CHROME";
   }
@@ -71,11 +72,17 @@ class Window extends React.Component {
         <NewsSite/>
       )
     }
+    else if (this.state.site ==='fbi'){
+      return(
+        <FBIPage/>
+      )
+    }
   }
 
   renderBookmarks(){
     return(
     <div class = "Bookmarks">
+      Bookmarks:   
       {this.state.bookmarks.map((bookmark, index) =>
       (
         <button class="bookmark" key={index} onClick={() => this.handleBookmarksClick(index)}>{bookmark}</button>
