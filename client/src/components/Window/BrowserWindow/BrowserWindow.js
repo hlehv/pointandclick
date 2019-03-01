@@ -1,0 +1,80 @@
+import React from "react";
+import "../Window.css";
+import NewsSite from "../Websites/NewsSite.js"
+import FBIPage from "../Websites/FBIPage.js"
+
+class BrowserWindow extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      status: 'open',
+      site: '',
+      bookmarks: ['news', 'fbi', 'email', 'name change',]
+    }
+    this.name = "GOOGLE CHROME";
+  }
+
+  render() {
+    return (
+      <div class="BrowserWindow_container">
+        {this.renderBrowserWindow()}
+      </div>
+    );
+  }
+
+  handleClick = () => {
+    if (this.state.status === 'open'){
+      this.setState({
+        status: 'closed'
+      })
+    } 
+    else {
+      this.setState({
+        status: 'open'
+      })
+    }
+  }
+
+  renderBrowserWindow() {
+      return (
+        <div class="BrowserWindow">
+          {this.renderBookmarks()}
+          {this.renderContents()}
+        </div>
+      );
+  }
+
+
+  renderContents(){
+    if (this.state.site === 'news'){
+      return(
+        <NewsSite/>
+      )
+    }
+    else if (this.state.site ==='fbi'){
+      return(
+        <FBIPage/>
+      )
+    }
+  }
+
+  renderBookmarks(){
+    return(
+    <div class = "Bookmarks">
+      Bookmarks:   
+      {this.state.bookmarks.map((bookmark, index) =>
+      (
+        <button class="bookmark" key={index} onClick={() => this.handleBookmarksClick(index)}>{bookmark}</button>
+      ))}
+    </div>
+    )
+  }
+
+  handleBookmarksClick = (index) => {
+      this.setState({
+        site: this.state.bookmarks[index]
+      })
+  }
+}
+
+export default BrowserWindow;
