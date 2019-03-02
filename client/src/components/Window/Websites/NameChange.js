@@ -1,4 +1,5 @@
 import React from "react";
+import NameChangePic from "../../../images/NameChange.png"
 
 class NameChange extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class NameChange extends React.Component {
 	  		  		<li> Choose your new name </li>
 	  		  		<li> Post your name change in the local newspaper 3 weeks in a row </li>
   		  		</ul>
+  		  		<img src={NameChangePic} alt = "namechange" id="namechangepic"></img>
   			</div>
   		);
   }
