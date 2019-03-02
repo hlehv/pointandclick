@@ -1,5 +1,5 @@
 import React from "react";
-import "../Window.css";
+import "./BrowserWindow.css";
 import NewsSite from "../Websites/NewsSite.js"
 import FBIPage from "../Websites/FBIPage.js"
 
