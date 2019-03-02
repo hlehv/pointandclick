@@ -1,7 +1,5 @@
 import React from "react";
 import "./Window.css";
-import NewsSite from "./Websites/NewsSite.js"
-import FBIPage from "./Websites/FBIPage.js"
 import BrowserWindow from "./BrowserWindow/BrowserWindow.js"
 
 
@@ -10,6 +8,7 @@ class Window extends React.Component {
     super(props);
     this.state = {
       status: 'open',
+      contents: 'browser',
     }
     this.name = "GOOGLE CHROME";
   }

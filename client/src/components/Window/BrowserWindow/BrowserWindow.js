@@ -1,14 +1,15 @@
 import React from "react";
-import "../Window.css";
 import NewsSite from "../Websites/NewsSite.js"
 import FBIPage from "../Websites/FBIPage.js"
+import NameChange from "../Websites/NameChange.js"
+import Gmail from "../Websites/Gmail/Gmail.js"
 
 class BrowserWindow extends React.Component {
   constructor(props){
     super(props);
     this.state = {
       status: 'open',
-      site: '',
+      site: 'email',
       bookmarks: ['news', 'fbi', 'email', 'name change',]
     }
     this.name = "GOOGLE CHROME";
@@ -45,7 +46,7 @@ class BrowserWindow extends React.Component {
   }
 
 
-  renderContents(){
+  renderContents(){ //change this to be from json
     if (this.state.site === 'news'){
       return(
         <NewsSite/>
@@ -55,6 +56,14 @@ class BrowserWindow extends React.Component {
       return(
         <FBIPage/>
       )
+    } else if (this.state.site ==='name change'){
+    	return(
+    		<NameChange />
+    	)
+    } else if (this.state.site ==='email'){
+    	return(
+    		<Gmail />
+    	)
     }
   }
 
