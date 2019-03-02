@@ -1,4 +1,41 @@
-#fbipic{
-	overflow: hidden;
-	width: 100%;
+.fbi-page {
+	padding: 10px;
+	font-family: sans-serif;
+}
+
+.search-page {
+	text-align: center;
+}
+
+.results-page {
+	margin: 10px 0px 10px;
+}
+
+#fbi-logo {
+	width: 30%;
+	display: block;
+	margin: 20px auto 20px;
+}
+
+#mugshot {
+	width: 30%;
+	float: left;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#back-button {
+	display: block;
+}
+
+#felon-info {
+	display: inline-block;
+	width: 65%;
+}
+
+tr {
+	vertical-align: top;
 }
