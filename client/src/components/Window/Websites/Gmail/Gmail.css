@@ -1,0 +1,33 @@
+.gmail {
+	font-family: sans-serif;
+}
+
+#login {
+	width: 40%;
+	padding: 20px;
+	margin: auto;
+
+	text-align: center;
+	border: 2px solid gray;
+}
+
+#welcome-message {
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#email-content {
+	padding: 10px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	text-align: left;
+}
+
+th, td {
+	border-bottom: 1px solid gray;
+	padding: 10px 20px 10px;
+}

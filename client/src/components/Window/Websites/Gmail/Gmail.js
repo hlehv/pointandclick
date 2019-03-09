@@ -1,4 +1,5 @@
 import React from "react";
+import "./Gmail.css";
 
 class Gmail extends React.Component {
   constructor(props){
@@ -13,26 +14,50 @@ class Gmail extends React.Component {
 
   render() {
   	return(
-  		  <div class="NameChange">
-          Welcome to gmail.
+  		  <div class="gmail">
           {this.renderContents()}
   			</div>
-  		);
+  	);
   }
 
   renderContents(){
     if (this.state.loggedIn){
       return(
-        <div>
-          Youre in the email lmao
+        <div id="email-content">
+          <table>
+            <tr>
+              <th>Sender</th>
+              <th>Message</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <th>Paul Blaer</th>
+              <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit</th>
+              <th>11:59 PM</th>
+            </tr>
+            <tr>
+              <th>Jae Woo Lee</th>
+              <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit</th>
+              <th>4:02 AM</th>
+            </tr>
+            <tr>
+              <th>Dan Rubenstein</th>
+              <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit</th>
+              <th>9:00 PM</th>
+            </tr>
+          </table>
         </div>
       )
     }
     return (
-      <div>
-        Enter your email <input type="text" id="emailInput" onChange={this.onEmailChange} name="name" placeholder="email"/>
+      <div id="login">
+        <div id="welcome-message">
+          Welcome to Gmail
+        </div>
         <br />
-        Enter your password <input type="text" id="passwordInput" onChange={this.onPasswordChange} name="name" placeholder="password"/>
+        <input type="text" id="emailInput" onChange={this.onEmailChange} name="name" placeholder="email"/>
+        <br />
+        <input type="text" id="passwordInput" onChange={this.onPasswordChange} name="name" placeholder="password"/>
         <br />
         <button onClick={this.onSubmitClick}>submit </button>
       </div>
