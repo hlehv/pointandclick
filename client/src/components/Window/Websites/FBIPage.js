@@ -1,7 +1,7 @@
 import React from "react";
-import "./FBIPage.css"
-import fbilogo from "../../../images/fbi-logo.jpg"
-import mugshot from "../../../images/mugshot.jpg"
+import "./FBIPage.css";
+import fbilogo from "../../../images/FBIPic.jpg";//"../../../images/fbi-logo.jpg";
+//import mugshot from "../../../images/mugshot.jpg";
 
 class FBIPage extends React.Component {
 	constructor(props) {
@@ -60,7 +60,7 @@ class FBIPage extends React.Component {
 			return (
 				<div class="results-page">
 		  			<div class="title">WANTED BY THE FBI</div><br/>
-		  			<img src={mugshot} id="mugshot"></img>
+		  			{/*<img src={mugshot} id="mugshot"></img>*/}
 		  			<table id="felon-info">
 		  				<tr>
 		  					<td>NAME:</td> 

@@ -42,10 +42,13 @@ class FileViewer extends React.Component {
       );
   }
 
-  renderContents(){
-      return(
-        <FBIPage/>
-      )
+  renderContents() {
+      return (
+        // {<FBIPage/> }
+        <div>
+          <h2>FBIPage here </h2>
+        </div>
+      );
   }
 
   renderTabs(){
