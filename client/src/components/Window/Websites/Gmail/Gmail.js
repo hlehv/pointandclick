@@ -1,4 +1,5 @@
 import React from "react";
+import "./Gmail.css";
 
 class Gmail extends React.Component {
   constructor(props){
@@ -13,26 +14,55 @@ class Gmail extends React.Component {
 
   render() {
   	return(
-  		  <div class="NameChange">
-          Welcome to gmail.
+  		  <div class="gmail">
           {this.renderContents()}
   			</div>
-  		);
+  	);
   }
 
   renderContents(){
     if (this.state.loggedIn){
       return(
-        <div>
-          Youre in the email lmao
+        <div id="email-content">
+          <table>
+            <tr>
+              <th>Sender</th>
+              <th>Message</th>
+              <th>Date</th>
+            </tr>
+            <tr>
+              <th>SouthEastern Airlines confirmation@southeasternflights.com</th>
+              <th>receipt - Confirmation of Purchase</th>
+              <th>05/21/18</th>
+            </tr>
+            <tr>
+              <th>bnelson@mccorcoran-law.com</th>
+              <th>Absence this week</th>
+              <th>05/19/18</th>
+            </tr>
+            <tr>
+              <th>Landon Home Security confirmation@landonazsecurity.com</th>
+              <th>Confirmation of purchase - Landon Home Security</th>
+              <th>5/08/18</th>
+            </tr>
+            <tr>
+              <th>John McFarmer (john.d.mcf@gmail.com</th>
+              <th>This weekend</th>
+              <th>April 11th 3:14 pm</th>
+            </tr>
+          </table>
         </div>
       )
     }
     return (
-      <div>
-        Enter your email <input type="text" id="emailInput" onChange={this.onEmailChange} name="name" placeholder="email"/>
+      <div id="login">
+        <div id="welcome-message">
+          Welcome to Gmail
+        </div>
         <br />
-        Enter your password <input type="text" id="passwordInput" onChange={this.onPasswordChange} name="name" placeholder="password"/>
+        <input type="text" id="emailInput" onChange={this.onEmailChange} name="name" placeholder="email"/>
+        <br />
+        <input type="text" id="passwordInput" onChange={this.onPasswordChange} name="name" placeholder="password"/>
         <br />
         <button onClick={this.onSubmitClick}>submit </button>
       </div>

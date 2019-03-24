@@ -10,7 +10,7 @@ class BrowserWindow extends React.Component {
     super(props);
     this.state = {
       status: 'open',
-      site: 'email',
+      site: 'news',
       bookmarks: ['news', 'fbi', 'email', 'name change',]
     }
     this.name = "GOOGLE CHROME";
