@@ -47,8 +47,9 @@ class Gmail extends React.Component {
               <br/>This is a confirmation of your recent ticket purchase. If you plan to check any baggage please refer to the FAQ page on our website and plan to arrive at your designated airport at least 2 hours before boarding time. Thank you for flying with us.
 
               <br/>This is an automated response. Please do not reply to this email. </font></th>
-              <th>receipt - Confirmation of Purchase</th>
-              <th>05/21/18</th>
+              <th>Sender</th>
+              <th>Message</th>
+              <th>Date</th>
             </tr>
             <tr>
               <th>bnelson@mccorcoran-law.com
@@ -61,6 +62,7 @@ class Gmail extends React.Component {
 
               <br/><br/>Sincerely,<br/>BN</font>
               </th>
+              <th>bnelson@mccorcoran-law.com</th>
               <th>Absence this week</th>
               <th>05/19/18</th>
             </tr>
@@ -77,8 +79,6 @@ class Gmail extends React.Component {
               <br/>Order Number: 11267
               <br/>This is an automated receipt. Please do not reply to this email.</font>
               </th>
-              <th>Confirmation of purchase - Landon Home Security</th>
-              <th>5/08/18</th>
             </tr>
             <tr>
               <th>John McFarmer (john.d.mcf@gmail.com</th>
