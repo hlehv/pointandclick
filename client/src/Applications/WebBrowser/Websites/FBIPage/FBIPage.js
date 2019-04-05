@@ -1,7 +1,7 @@
 import React from "react";
 import "./FBIPage.css";
-import fbilogo from "../../../images/fbi-logo.jpg";
-import mugshot from "../../../images/mugshot.jpg";
+import fbilogo from "../../../../images/fbi-logo.jpg";
+import mugshot from "../../../../images/mugshot.jpg";
 
 class FBIPage extends React.Component {
 	constructor(props) {

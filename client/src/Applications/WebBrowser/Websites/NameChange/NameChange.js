@@ -1,5 +1,5 @@
 import React from "react";
-import NameChangePic from "../../../images/NameChange.png"
+import NameChangePic from "../../../../images/NameChange.png"
 
 class NameChange extends React.Component {
   render() {
