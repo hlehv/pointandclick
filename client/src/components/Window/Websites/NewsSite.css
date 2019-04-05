@@ -10,3 +10,23 @@
 	overflow: hidden;
 	width: 100%;
 }
+
+#paperTitle{
+	margin: auto;
+	background-color: #D3D3D3;
+	font-family: 'Syncopate', sans-serif;
+	font-size: 40px;
+}
+
+.artTitle{
+	font-family: 'Cinzel', serif;
+	font-size: 20px;
+
+}
+.hr{
+
+}
+
+.underline{
+	text-decoration: underline;
+}
