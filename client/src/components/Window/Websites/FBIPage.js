@@ -65,6 +65,7 @@ class FBIPage extends React.Component {
 		  			<div class="title">WANTED BY THE FBI</div>
 		  			<img src={mugshot} id="mugshot"></img>
 		  			<table id="felon-info">
+<<<<<<< HEAD
 		  				<tbody>
 			  				<tr>
 			  					<td>NAME:</td> 
@@ -95,6 +96,49 @@ class FBIPage extends React.Component {
 			  					<td>{data["last seen"]}</td> 
 			  				</tr>
 		  				</tbody>
+=======
+		  				<tr>
+		  					<td>NAME:</td> 
+		  					<td>{this.state.query}</td>
+		  				</tr>
+		  				<tr>
+		  					<td>AGE:</td> 
+		  					<td>35</td> 
+		  				</tr>
+		  				<tr>
+		  					<td>HEIGHT:</td> 
+		  					<td>5'10''</td> 
+		  				</tr>
+		  				<tr>
+		  					<td>WEIGHT:</td> 
+		  					<td>180 lbs</td> 
+		  				</tr>
+		  				<tr>
+		  					<td>GENDER:</td> 
+		  					<td>M</td> 
+		  				</tr>
+		  				<tr>
+		  					<td>HOMETOWN:</td> 
+		  					<td>New Rocksford, Connecticut</td> 
+		  				</tr>
+		  				<tr>
+		  					<td>CRIME:</td> 
+		  					<td>
+		  						The fugitive was charged with conspiracy 
+		  						to steal trade secrets, a federal warrant 
+		  						was issued for his arrest in the United 
+		  						States District Court, Southern District 
+		  						of Iowa, on December 17, 2013. If you have 
+		  						any information concerning this person, 
+		  						please contact your local FBI office or 
+		  						the nearest American Embassy or consulate.
+		  					</td> 
+		  				</tr>
+		  				<tr>
+		  					<td nowrap>LAST SEEN:</td> 
+		  					<td>La Paz, Mexico</td> 
+		  				</tr>
+>>>>>>> a6c86eb3af92a5e7f6684133193a83cbc4ed0882
 		  			</table>
 	  			</div>
 	  		);

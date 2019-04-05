@@ -1,8 +1,9 @@
 .NewsSite{
 	width: 100%;
-	color: blue;
-	background-color: lightgrey;
+	color: black;
+	background-color: white;
 	height: 100%;
+	padding: 20px;
 }
 
 #newspaperpic{

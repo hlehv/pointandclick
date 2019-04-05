@@ -8,6 +8,7 @@ class Gmail extends React.Component {
       usernameEntered: '',
       passwordEntered: '',
       loggedIn: false,
+      box: 'inbox'
     }
     this.name = "GOOGLE CHROME";
   }
@@ -22,32 +23,108 @@ class Gmail extends React.Component {
 
   renderContents(){
     if (this.state.loggedIn){
-      return(
-        <div id="email-content">
-          <table>
-            <tr>
-              <th>Sender</th>
-              <th>Message</th>
-              <th>Date</th>
-            </tr>
-            <tr>
-              <th>Paul Blaer</th>
-              <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit</th>
-              <th>11:59 PM</th>
-            </tr>
-            <tr>
-              <th>Jae Woo Lee</th>
-              <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit</th>
-              <th>4:02 AM</th>
-            </tr>
-            <tr>
-              <th>Dan Rubenstein</th>
-              <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit</th>
-              <th>9:00 PM</th>
-            </tr>
-          </table>
-        </div>
-      )
+      if (this.state.box == 'inbox') {
+        return(
+          <div id="email-content">
+            <table>
+              <tr>
+                <th>Sender/Message</th>
+                <th>Subject</th>
+                <th>Date</th>
+              </tr>
+              <tr>
+                <th>SouthEastern Airlines confirmation@southeasternflights.com
+                <font size="2">
+                <br/><br/>Dear Mr. Papen,
+
+                <br/>Order Date: 05/21/18
+
+                <br/>Confirmation Number: 01688413
+
+               <br/> Flight Number: AZ-929
+
+               <br/> Departure: IFP 05/26/18 9:10 AM (MST)
+
+                <br/>Estimated Arrival: BGR 05/26/18 4:35 PM (EST)
+                <br/>This is a confirmation of your recent ticket purchase. If you plan to check any baggage please refer to the FAQ page on our website and plan to arrive at your designated airport at least 2 hours before boarding time. Thank you for flying with us.
+
+                <br/>This is an automated response. Please do not reply to this email. </font></th>
+                <th>Sender</th>
+                <th>Message</th>
+                <th>Date</th>
+              </tr>
+              <tr>
+                <th>bnelson@mccorcoran-law.com
+                <font size="2">
+                <br/><br/>David!
+
+                <br/>We did not seen you in the office at all this week, and have not heard from you about taking personal time off. I feel I have been generous in the past in accommodating your familial leaves of absence.
+
+                <br/>Of course if this is due to a personal emergency I can be lenient again, we would simply appreciate hearing from you in advance. Send Carmen my best.
+
+                <br/><br/>Sincerely,<br/>BN</font>
+                </th>
+                <th>bnelson@mccorcoran-law.com</th>
+                <th>Absence this week</th>
+                <th>05/19/18</th>
+              </tr>
+              <tr>
+                <th>Landon Home Security confirmation@landonazsecurity.com
+
+                <font size="2">
+                <br/><br/>Dear Mr. Papen,
+
+                <br/>Thank you for purchasing our new and improved home security sensors. Your safety is our priority. If you need installation help please follow up with our team of competent customer assistants.
+
+                <br/><br/>1(800)-209-1962
+                <br/>Order Date: 05/08/2018
+                <br/>Order Number: 11267
+                <br/>This is an automated receipt. Please do not reply to this email.</font>
+                </th>
+              </tr>
+              <tr>
+                <th>John McFarmer (john.d.mcf@gmail.com</th>
+                <th>This weekend</th>
+                <th>April 11th 3:14 pm</th>
+              </tr>
+            </table>
+          </div>
+        )
+      }
+      else if (this.state.box == 'trash') {
+        return(
+          <div id="email-content">
+            <table>
+              <tr>
+                <th>Sender/Message</th>
+                <th>Subject</th>
+                <th>Date</th>
+              </tr>
+              <tr>
+                <th>SouthEastern Airlines confirmation@southeasternflights.com
+                <font size="2">
+                <br/><br/>Dear Mr. Papen,
+
+                <br/>Order Date: 05/21/18
+
+                <br/>Confirmation Number: 01688413
+
+               <br/> Flight Number: AZ-929
+
+               <br/> Departure: IFP 05/26/18 9:10 AM (MST)
+
+                <br/>Estimated Arrival: BGR 05/26/18 4:35 PM (EST)
+                <br/>This is a confirmation of your recent ticket purchase. If you plan to check any baggage please refer to the FAQ page on our website and plan to arrive at your designated airport at least 2 hours before boarding time. Thank you for flying with us.
+
+                <br/>This is an automated response. Please do not reply to this email. </font></th>
+                <th>Sender</th>
+                <th>Message</th>
+                <th>Date</th>
+              </tr>
+            </table>
+          </div>
+        )
+      }
     }
     return (
       <div id="login">
@@ -77,8 +154,8 @@ class Gmail extends React.Component {
   }
 
   onSubmitClick = () => {
-      if (this.state.passwordEntered === 'danzilo' 
-        && this.state.emailEntered === 'hlehv'){
+      if (this.state.passwordEntered == 'NewRocksford' 
+        && this.state.emailEntered == 'davidpapen@gmail.com'){
         this.setState({
           loggedIn: true
         })
