@@ -154,8 +154,8 @@ class Gmail extends React.Component {
   }
 
   onSubmitClick = () => {
-      if (this.state.passwordEntered === 'NewRocksford' 
-        && this.state.emailEntered === 'davidpapen@gmail.com'){
+      if (this.state.passwordEntered == 'NewRocksford' 
+        && this.state.emailEntered == 'davidpapen@gmail.com'){
         this.setState({
           loggedIn: true
         })

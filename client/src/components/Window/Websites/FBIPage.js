@@ -83,6 +83,10 @@ class FBIPage extends React.Component {
 		  					<td>M</td> 
 		  				</tr>
 		  				<tr>
+		  					<td>HOMETOWN:</td> 
+		  					<td>New Rocksford, Connecticut</td> 
+		  				</tr>
+		  				<tr>
 		  					<td>CRIME:</td> 
 		  					<td>
 		  						The fugitive was charged with conspiracy 
