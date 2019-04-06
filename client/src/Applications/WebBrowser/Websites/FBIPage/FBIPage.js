@@ -29,14 +29,14 @@ class FBIPage extends React.Component {
 	render() {
 		if (this.state.status === "search") {
 		  	return (
-		  		<div class="fbi-page">
+		  		<div className="fbi-page">
 	  				{this.renderSearchPage()}
 	  			</div>
 		  	);
 	  	}
 	  	else {
 	  		return (
-	  			<div class="fbi-page">
+	  			<div className="fbi-page">
 	  				<button id="back-button" onClick={() => this.handleSearch()}>BACK</button>
 	  				{this.renderResultsPage()}
 	  			</div>
@@ -46,9 +46,9 @@ class FBIPage extends React.Component {
 
 	renderSearchPage() {
 		return ( 
-			<div class="search-page">
+			<div className="search-page">
 		   		<img src={fbilogo} alt="FBI" id="fbi-logo"></img>
-		   		<div class="title">THE FBI DATABASE OF FELONS</div>
+		   		<div className="title">THE FBI DATABASE OF FELONS</div>
 		   		<input type="text" value={this.state.query} onChange={this.handleChange} />
 				<button onClick={() => this.handleSearch()}>SEARCH</button>
 			</div>
@@ -58,9 +58,9 @@ class FBIPage extends React.Component {
 	renderResultsPage() {
 		if (this.felons.includes(this.state.query)) {
 			return (
-				<div class="results-page">
-		  			<div class="title">WANTED BY THE FBI</div><br/>
-		  			<img src={mugshot} id="mugshot"></img>
+				<div className="results-page">
+		  			<div className="title">WANTED BY THE FBI</div><br/>
+		  			<img src={mugshot} alt="mugshot" id="mugshot"></img>
 		  			<table id="felon-info">
 		  				<tr>
 		  					<td>NAME:</td> 
@@ -105,7 +105,7 @@ class FBIPage extends React.Component {
 	  	}
 	  	else {
 	  		return (
-				<div class="results-page title">NO RESULTS FOR "{this.state.query}"</div>
+				<div className="results-page title">NO RESULTS FOR "{this.state.query}"</div>
 	  		);
 	  	}
 	}

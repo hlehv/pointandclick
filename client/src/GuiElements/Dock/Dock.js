@@ -6,11 +6,13 @@ class Dock extends React.Component {
   render() {
     return (
       <div className="dock">
-        <a href="#file-explorer"><i className="fas fa-folder"></i></a>
-        <a href="#web-browser"><i className="fab fa-chrome"></i></a>
-        <a href="#word-processor"><i className="fas fa-file-word"></i></a>
-        <a href="#messages"><i className="fas fa-comments"></i></a>
-        <a href="#trash"><i className="fas fa-trash-alt"></i></a>
+        <ul>
+          <li><i className="fas fa-folder"></i></li>
+          <li><i className="fab fa-chrome active"></i></li>
+          <li><i className="fas fa-file-word"></i></li>
+          <li><i className="fas fa-comments"></i></li>
+          <li><i className="fas fa-trash-alt"></i></li>
+        </ul>
       </div>
     );
   }

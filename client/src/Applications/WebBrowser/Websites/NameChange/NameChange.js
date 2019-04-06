@@ -4,7 +4,7 @@ import NameChangePic from "../../../../images/NameChange.png"
 class NameChange extends React.Component {
   render() {
   	return(
-  		  	<div class="NameChange">
+  		  	<div className="NameChange">
   		  		How to change your name: Follow these steps
   		  		<ul>
 	  		  		<li> Choose your new name </li>

@@ -15,7 +15,7 @@ class Gmail extends React.Component {
 
   render() {
   	return(
-  		  <div class="gmail">
+  		  <div className="gmail">
           {this.renderContents()}
   			</div>
   	);
@@ -23,7 +23,7 @@ class Gmail extends React.Component {
 
   renderContents(){
     if (this.state.loggedIn){
-      if (this.state.box == 'inbox') {
+      if (this.state.box === 'inbox') {
         return(
           <div id="email-content">
             <table>
@@ -91,7 +91,7 @@ class Gmail extends React.Component {
           </div>
         )
       }
-      else if (this.state.box == 'trash') {
+      else if (this.state.box === 'trash') {
         return(
           <div id="email-content">
             <table>

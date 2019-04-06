@@ -1,11 +1,11 @@
 import React from "react";
 import "./Desktop.css";
 import Image from "../../images/testbg.jpg";
-import { Sidebar, Dock, Window } from "../../GuiElements";
+import { Sidebar, Dock } from "../../GuiElements";
 import { FileExplorer, WebBrowser } from "../../Applications";
 
 /**
- * @TODO Applications array
+ * @TODO Make dock open applications
  */
 
 const styles = {
@@ -13,18 +13,17 @@ const styles = {
         backgroundImage: `url(${Image})`
     }
 };
-
 class Desktop extends React.Component {
-    // state = {
-    //     openApplications: [<FileExplorer />]
-    // };
+    state = {
+        openApplication: <WebBrowser />
+    };
     render() {
         return (
             <div className="desktop">
                 <div className="background" style={styles.background}></div>
                 <Sidebar />
                 <Dock />
-                <WebBrowser />
+                { this.state.openApplication }
             </div>
         );
     }
