@@ -1,1 +1,1 @@
-This is the point and click game GitHub Repo
+Restructured codebase for the point and click game
