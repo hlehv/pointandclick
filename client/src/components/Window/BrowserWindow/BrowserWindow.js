@@ -53,15 +53,15 @@ class BrowserWindow extends React.Component {
         <NewsSite/>
       )
     }
-    else if (this.state.site ==='fbi'){
+    else if (this.state.site === 'fbi'){
       return(
         <FBIPage/>
       )
-    } else if (this.state.site ==='name change'){
+    } else if (this.state.site === 'name change'){
     	return(
     		<NameChange/>
     	)
-    } else if (this.state.site ==='email'){
+    } else if (this.state.site === 'email'){
     	return(
     		<Gmail/>
     	)

@@ -3,7 +3,6 @@ import "./Window.css";
 import BrowserWindow from "./BrowserWindow/BrowserWindow.js"
 import FileViewer from "./FileViewer/FileViewer.js"
 
-
 class Window extends React.Component {
   constructor(props){
     super(props);
