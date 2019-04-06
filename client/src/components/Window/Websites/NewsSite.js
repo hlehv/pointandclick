@@ -6,7 +6,7 @@ class NewsSite extends React.Component {
   render() {
   	return(
   		  	<div class="NewsSite">
-  		  		<span id="paperTitle"> MOHAVE POST </span> <br />
+  		  		<div id="paperTitle"> MOHAVE POST </div> <br />
   		  		<hr />
   		  		<span class="artTitle"> Septruary 37, 2014  </span> <br />
   		  		<hr />

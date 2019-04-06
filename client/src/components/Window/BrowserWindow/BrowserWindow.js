@@ -11,7 +11,7 @@ class BrowserWindow extends React.Component {
     this.state = {
       status: 'open',
       site: 'news',
-      bookmarks: ['news', 'fbi', 'email', 'name change',]
+      bookmarks: ['news', 'fbi', 'email', 'name change']
     }
     this.name = "GOOGLE CHROME";
   }
@@ -59,24 +59,23 @@ class BrowserWindow extends React.Component {
       )
     } else if (this.state.site ==='name change'){
     	return(
-    		<NameChange />
+    		<NameChange/>
     	)
     } else if (this.state.site ==='email'){
     	return(
-    		<Gmail />
+    		<Gmail/>
     	)
     }
   }
 
   renderBookmarks(){
     return(
-    <div class = "Bookmarks">
-      Bookmarks:   
-      {this.state.bookmarks.map((bookmark, index) =>
-      (
-        <button class="bookmark" key={index} onClick={() => this.handleBookmarksClick(index)}>{bookmark}</button>
-      ))}
-    </div>
+      <div class = "Bookmarks">  
+        {this.state.bookmarks.map((bookmark, index) =>
+        (
+          <button class="bookmark" key={index} onClick={() => this.handleBookmarksClick(index)}>{bookmark}</button>
+        ))}
+      </div>
     )
   }
 
