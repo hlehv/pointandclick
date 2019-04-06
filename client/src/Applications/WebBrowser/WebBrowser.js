@@ -32,7 +32,7 @@ class WebBrowser extends React.Component {
 
             { this.state.bookmarks[this.state.currentPage] }
           </div>
-        }/>
+        } close={this.props.close}/>
       </div>
     );
   }

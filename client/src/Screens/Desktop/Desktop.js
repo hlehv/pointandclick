@@ -2,11 +2,6 @@ import React from "react";
 import "./Desktop.css";
 import Image from "../../images/testbg.jpg";
 import { Sidebar, Dock } from "../../GuiElements";
-import { FileExplorer, WebBrowser } from "../../Applications";
-
-/**
- * @TODO Make dock open applications
- */
 
 const styles = {
     background: {
@@ -15,17 +10,27 @@ const styles = {
 };
 class Desktop extends React.Component {
     state = {
-        openApplication: <WebBrowser />
+        openApp: null
     };
     render() {
         return (
             <div className="desktop">
                 <div className="background" style={styles.background}></div>
-                <Sidebar />
-                <Dock />
-                { this.state.openApplication }
+                {/* <Sidebar /> */}
+                <Dock openApplication={this.startApplication} closeApplication={this.closeApplication}/>
+                { this.state.openApp }
             </div>
         );
+    }
+    startApplication = app => {
+        this.setState({
+            openApp: app
+        });
+    }
+    closeApplication = () => {
+        this.setState({
+            openApp: null
+        });
     }
 }
 

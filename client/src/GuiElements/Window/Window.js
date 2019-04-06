@@ -20,12 +20,12 @@ class Window extends React.Component {
           </div>
         </div>
       );
-    } else {
-      return ("Currently closed dude");
-    }
+    } else
+      return null;
   }
   close() {
     alert("CLICKED CLOSE");
+    this.props.close();
   }
   maximize() {
     alert("CLICKED MAXIMIZE");
