@@ -21,11 +21,10 @@
 .open_close_button{
   background-color: lightgrey;
   width: 100%;
-  border: none;
 
   color: black;
   text-align: center;
-  text-decoration: none;
+  /*text-decoration: none;*/
   font-size: 15px;
   padding: 15px 0px 15px;
 }
