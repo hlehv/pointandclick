@@ -1,3 +1,26 @@
 .bookmark {
 	padding: 5px 10px 5px;
+	background-color: white;
+	border: none;
+	text-align: center;
+	transition: 0.3s;
+	display: inline;
+}
+
+.bookmark:hover{
+	background-color: #e5e5e5;
+	border-radius: 80px;
+}
+
+.bookmarktext{
+	display: inline;
+	margin-bottom: 10px;
+	padding-top: 7px;
+	float: right;
+}
+
+#file-pic{
+	display: inline-block;
+	padding: 0;
+	float: left;
 }
