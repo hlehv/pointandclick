@@ -24,7 +24,6 @@ class Window extends React.Component {
       return null;
   }
   close() {
-    alert("CLICKED CLOSE");
     this.props.close();
   }
   maximize() {

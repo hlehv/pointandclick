@@ -3,6 +3,9 @@ import "./Dock.css";
 import { FileExplorer, WebBrowser } from "../../Applications";
 
 class Dock extends React.Component {
+  state = {
+    currentlyOpen: null
+  };
   render() {
     return (
       <div className="dock">
@@ -18,9 +21,11 @@ class Dock extends React.Component {
   }
   openApplication = (component, app) => {
     component.target.className += " active";
+    this.setState({ currentlyOpen: component.target });
     this.props.openApplication(app);
   }
   closeApplication = () => {
+    this.state.currentlyOpen.className = this.state.currentlyOpen.className.replace("active", "");
     this.props.closeApplication();
   }
 }
