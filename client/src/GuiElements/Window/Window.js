@@ -9,7 +9,7 @@ class Window extends React.Component {
     if(this.state.open) {
       return (
         <div className="window-container">
-          <div className="top-bar">
+          <div className="top">
             {this.props.title}
             <button className="button" onClick={() => this.close()}>X</button>
             <button className="button" onClick={() => this.maximize()}>+</button>

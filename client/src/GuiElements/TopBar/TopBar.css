@@ -1,0 +1,33 @@
+.top-bar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+}
+.top-bar .tabs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+.top-bar .tab {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px 10px 16px;
+    text-decoration: none;
+}
+.top-bar .active {
+    border-bottom: 2.5px solid white;
+}
+.top-bar li:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+.open-menu {
+    background-color: transparent;
+    width: inherit;
+}

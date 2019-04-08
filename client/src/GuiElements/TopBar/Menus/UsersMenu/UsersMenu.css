@@ -1,0 +1,11 @@
+.users-menu {
+    background-color: black;
+    float: left;
+    width: 30%;
+}
+.users-menu ul {
+    list-style-type: none;
+}
+.users-menu ul li {
+    color: white;
+}

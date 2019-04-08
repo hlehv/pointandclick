@@ -6,28 +6,27 @@
   width: 100%;
   z-index: 500;
 }
-
-ul {
+.apps {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #000;
 }
-li {
+.app {
   float: left;
 }
 .active {
   border-bottom: 2.5px solid white;
 }
-li i {
+.app i {
   display: block;
   color: white;
   text-align: center;
   padding: 10px 16px 10px 16px;
   text-decoration: none;
 }
-li i:hover {
+.app i:hover {
   background-color: #333;
   cursor: pointer;
 }

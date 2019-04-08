@@ -1,7 +1,7 @@
 import React from "react";
 import "./Desktop.css";
-import Image from "../../images/testbg.jpg";
-import { Sidebar, Dock } from "../../GuiElements";
+import Image from "../../images/background2.jpg";
+import { Sidebar, Dock, TopBar } from "../../GuiElements";
 
 const styles = {
     background: {
@@ -17,6 +17,7 @@ class Desktop extends React.Component {
             <div className="desktop">
                 <div className="background" style={styles.background}></div>
                 {/* <Sidebar /> */}
+                <TopBar />
                 <Dock openApplication={this.startApplication} closeApplication={this.closeApplication}/>
                 { this.state.openApp }
             </div>
