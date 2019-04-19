@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Ren Font';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./images/Ren\ Font.ttf'); /* IE9 Compat Modes */
+    src: local("Ren Font"), local("Ren Font"),
+    url('./images/Ren\ Font.ttf') format('truetype');
+}
+body {
+    font-family: "Ren Font";
+}

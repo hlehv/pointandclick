@@ -1,6 +1,6 @@
 import React from "react";
 import "./Desktop.css";
-import Image from "../../images/background2.jpg";
+import Image from "../../images/FamilyPortrait.png";
 import { Sidebar, Dock, TopBar } from "../../GuiElements";
 
 const styles = {
