@@ -57,9 +57,7 @@ class Window extends React.Component {
     return (
       <div class="top-bar">
         {this.name}
-        <button class="exit-button" onClick={() => this.handleClick()}>X</button>
-        <button class="exit-button">+</button>
-        <button class="exit-button">-</button>
+        <i class="fas fa-window-close close-button" onClick={() => this.handleClick()}></i>
       </div>
     );
   }

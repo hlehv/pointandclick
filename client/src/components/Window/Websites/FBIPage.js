@@ -2,7 +2,7 @@ import React from "react";
 import "./FBIPage.css";
 import fbilogo from "../../../images/fbi-logo.jpg";
 import mugshot from "../../../images/mugshot.jpg";
-import felons from './FBIPageData.json'
+import felons from './Felons.json'
 
 class FBIPage extends React.Component {
 	constructor(props) {
@@ -49,7 +49,7 @@ class FBIPage extends React.Component {
 		return ( 
 			<div class="search-page">
 		   		<img src={fbilogo} alt="FBI" id="fbi-logo"></img>
-		   		<div class="title">THE FBI DATABASE OF FELONS</div>
+		   		<div class="search-title">THE FBI DATABASE OF FELONS</div>
 		   		<input type="text" value={this.state.query} onChange={this.handleChange} />
 				<button onClick={() => this.handleSearch()}>SEARCH</button>
 			</div>
@@ -62,7 +62,7 @@ class FBIPage extends React.Component {
 			const data = this.felons[this.state.query];
 			return (
 				<div class="results-page">
-		  			<div class="title">WANTED BY THE FBI</div>
+		  			<div class="results-title">WANTED BY THE FBI</div>
 		  			<img src={mugshot} id="mugshot"></img>
 		  			<table id="felon-info">
 		  				<tbody>
@@ -101,7 +101,7 @@ class FBIPage extends React.Component {
 	  	}
 	  	else {
 	  		return (
-				<div class="results-page title">NO RESULTS FOR "{this.state.query}"</div>
+				<div class="results-page results-title">NO RESULTS FOR "{this.state.query}"</div>
 	  		);
 	  	}
 	}

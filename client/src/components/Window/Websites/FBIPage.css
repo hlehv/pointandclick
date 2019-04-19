@@ -21,9 +21,14 @@
 	float: left;
 }
 
-.title {
-	font-size: 20px;
+.search-title, .results-title {
+	text-align: center;
+	font-size: 25px;
 	font-weight: 700;
+}
+
+.results-title {
+	margin-bottom: 25px;
 }
 
 #back-button {

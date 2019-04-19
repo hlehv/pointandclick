@@ -1,7 +1,30 @@
+:root {
+	--dock-height: 50px; 
+}
+
 body {
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+i {
+	color: gray;
+	margin: 10px;
+	font-size: 2em;
 }
 
 button {
+	font-family: 'Gloria Hallelujah', cursive;
 	cursor: pointer;
+	border-radius: 10px;
+}
+
+input {
+	font-family: 'Gloria Hallelujah', cursive;
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	padding: 1px;
+}
+
+input:focus, button:focus {
+	outline: none;
 }

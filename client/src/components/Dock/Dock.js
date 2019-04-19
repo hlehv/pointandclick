@@ -1,5 +1,6 @@
 import React from "react";
 import "./Dock.css";
+import Sidebar from "../Sidebar/Sidebar";
 
 class Dock extends React.Component {
   render() {

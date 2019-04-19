@@ -3,14 +3,9 @@
   background-color: white;
   position: fixed;
   bottom: 0;
-  height: 50px;
+  height: var(--dock-height);
   width: 100%;
 }
 
-i {
-	color: gray;
-	margin: 10px;
-	font-size: 2em;
-}
 
 
