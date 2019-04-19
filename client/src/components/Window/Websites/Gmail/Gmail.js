@@ -1,6 +1,6 @@
 import React from "react";
 import "./Gmail.css";
-import emails from "./Emails.json"
+import emails from "../../../../data/Emails.json"
 
 class Gmail extends React.Component {
   constructor(props){
