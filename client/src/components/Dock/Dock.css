@@ -5,6 +5,8 @@
   bottom: 0;
   height: 50px;
   width: 100%;
+  height: 50px;
+  opacity: 0.8;
 }
 
 i {
@@ -12,5 +14,3 @@ i {
 	margin: 10px;
 	font-size: 2em;
 }
-
-

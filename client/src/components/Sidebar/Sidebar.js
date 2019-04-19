@@ -1,5 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
+import Carmen from  "../../images/Carmen.png";
 
 class Sidebar extends React.Component {
   constructor(props){
@@ -36,9 +37,11 @@ class Sidebar extends React.Component {
       return (
         <div>
         <div class="user_box">
+          <img class = "user_icon" src = {Carmen} />
           Mom
         </div>
         <div class="user_box">
+          <img src = {Carmen} style = {{width: 60, height: 60}}/>
           Dad
         </div>
         <div class="user_box">
