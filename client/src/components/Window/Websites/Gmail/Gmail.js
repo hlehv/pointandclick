@@ -15,7 +15,7 @@ class Gmail extends React.Component {
 
   render() {
   	return(
-  		  <div class="gmail">
+  		  <div>
           {this.renderContents()}
   			</div>
   	);

@@ -37,28 +37,25 @@ class Sidebar extends React.Component {
       return (
         <div>
         <div class="user_box">
-          <img class = "user_icon" src = {Carmen} /> 
+          <img class = "user_icon" src = {Carmen} />
           Mom
         </div>
         <div class="user_box">
-          <img src = {Carmen} style = {{width: 60, height: 60}}/> 
+          <img src = {Carmen} style = {{width: 60, height: 60}}/>
           Dad
         </div>
         <div class="user_box">
-          <img src = {Carmen} style = {{width: 60, height: 60}}/> 
-          Grandpappy
+          Sophie
         </div>
         <div class="user_box">
-          <img src = {Carmen} style = {{width: 60, height: 60}}/> 
-          Aunty Sue
+          Carmen
         </div>
         <button type="button" class="open_close_button" onClick={() => this.handleClick()}> Close </button>
         </div>
       );
     } else {
-      console.log("hello")
       return (
-        <button class="open_close_button" type="button" onClick={() => this.handleClick()}> Open </button>
+        <button class="open_close_button" type="button" onClick={() => this.handleClick()}> Accounts </button>
         );
     }
   }

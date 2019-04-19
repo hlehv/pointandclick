@@ -1,7 +1,7 @@
 import React from "react";
 import "./Background.css";
 
-import Image from '../../images/testbg.jpg'; // Import using relative path
+import Image from '../../images/FamilyPortrait.png'; // Import using relative path
 
 const styles = {
     bg: {

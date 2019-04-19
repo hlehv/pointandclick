@@ -1,0 +1,47 @@
+{
+	"Harrison Stone Highground": {
+		"name": "Harrison Stone Highground",
+		"age": "46",
+		"height": "6'2\"",
+		"weight": "197 lbs",
+		"gender": "M",
+		"crime": "Highground has been convicted with five charges of identity document forgery including California State identification, Nevada State identification, Wyoming State identification, passport, California driver’s license, and Nevada driver’s license forgery. He has two additional charges of credit card fraud and one charge of tax evasion. Highground is also currently a suspect in an ongoing investigation regarding the robbery of a Medicom, Inc. warehouse off of the I-5 highway outside Santa Clarita, California. Please contact your local FBI office or the nearest American Embassy if you have any information on this fugitive.",
+		"last seen": "St. Helena, California"
+	}, 
+	"Johan Mac-Fermer": {
+		"name": "Johan Mac-Fermer",
+		"age": "52",
+		"height": "5'11\"",
+		"weight": "192 lbs",
+		"gender": "M",
+		"crime": "Mac-Fermer has been charged with the production and circulation of crystal meth and heroin from his trailer park home in Eagle Pass, Texas. Mac-Fermer also has two previous charges of possession of illegal firearms. He is part of an ongoing investigation regarding the assault of an unnamed Medicom, Inc employee outside their main research facility in San Antonio, Texas. Please contact your local FBI office or the nearest American Embassy if you have any information on this fugitive.",
+		"last seen": "Eagle Pass, Texas"
+	}, 
+	"Delaney Deforet": {
+		"name": "Delaney Deforet",
+		"age": "34",
+		"height": "5'10\"",
+		"weight": "178 lbs",
+		"gender": "F",
+		"crime": "Deforet has been convicted with six counts of kidnapping and two counts of first degree murder. She has one additional charge of possession of illegal firearms and two charges of identity document forgery including Ohio State identification and an Ohio State driver’s license. Deforet is currently a suspect in an ongoing investigation regarding arson of Medicom, Inc. property on the outskirts of Hubbard, Ohio. Please contact your local FBI office or the nearest American Embassy if you have any information on this fugitive.",
+		"last seen": "Youngstown, Ohio"
+	}, 
+	"Tayte Benj": {
+		"name": "Tayte Benj",
+		"age": "23",
+		"height": "5'2\"",
+		"weight": "135 lbs",
+		"gender": "F",
+		"crime": "Benj has been convicted with two accounts of armed robbery and three accounts of assault. She has one additional charge of breaking and entering and attempted armed robbery.  Please contact your local FBI office or the nearest American Embassy if you have any information on this fugitive.",
+		"last seen": "Spearfish, South Dakota"
+	},
+	"Zyron Z. Zyron": {
+		"name": "Zyron Z. Zyron",
+		"age": "Unknown",
+		"height": "6'6\"",
+		"weight": "166 lbs",
+		"gender": "M",
+		"crime": "Zyron has been convicted with three charges of first degree murder, one charge of second degree murder, four charges of assault, and three charges of cannibalism. Zyron is involved in an ongoing investigation regarding the disappearance of Dr. Phyllis Morne, lead researcher at Medicom, Inc.’s San Francisco branch. Please contact your local FBI office or the nearest American Embassy if you have any information on this fugitive.",
+		"last seen": "Willow Valley, Arizona"
+	}
+}
