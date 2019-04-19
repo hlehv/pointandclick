@@ -1,18 +1,19 @@
+
 import React from "react";
 import NameChangePic from "../../../../images/NameChange.png"
 
 class NameChange extends React.Component {
   render() {
-  	return(
-  		  	<div className="NameChange">
-  		  		How to change your name: Follow these steps
-  		  		<ul>
-	  		  		<li> Choose your new name </li>
-	  		  		<li> Post your name change in the local newspaper 3 weeks in a row </li>
-  		  		</ul>
-  		  		<img src={NameChangePic} alt = "namechange" id="namechangepic"></img>
-  			</div>
-  		);
+    return(
+          <div class="NameChange">
+            How to change your name: Follow these steps
+            <ul>
+              <li> Choose your new name </li>
+              <li> Post your name change in the local newspaper 3 weeks in a row </li>
+            </ul>
+            <img src={NameChangePic} alt = "namechange" id="namechangepic"></img>
+        </div>
+      );
   }
 
 }
