@@ -8,14 +8,16 @@
 	border: 2px solid gray;
 }
 
-#welcome-message {
-	padding: 10px;
-	font-size: 20px;
-	font-weight: 700;
+.big {
+	font-size: 50px;
 }
 
-#email-content {
-	padding: 10px;
+.medium {
+	font-size: 25px;
+}
+
+.padding {
+	padding: 10px 50px;
 }
 
 table {
@@ -24,7 +26,12 @@ table {
 	text-align: left;
 }
 
-th, td {
+th, .email-body {
 	border-bottom: 1px solid gray;
-	padding: 10px 20px 10px;
+}
+
+tr.email-body > td {
+	padding: 20px 0px;
+	white-space: pre-wrap;
+	font-size: 15px;
 }

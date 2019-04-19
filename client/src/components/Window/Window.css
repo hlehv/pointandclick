@@ -12,7 +12,7 @@
 }
 
 .minimized-window {
-	height: 40px;
+	height: var(--dock-height);
 	width: 300px;
 	background: gray;
 	text-align: center;
@@ -21,6 +21,9 @@
 	right: 0;
 	bottom: 0;
 	cursor: pointer;
+
+	box-sizing: border-box;
+	border: 5px solid white;
 }
 
 .top-bar {
@@ -30,8 +33,9 @@
 	text-align: center;
 }
 
-.exit-button {
-	color: pink;
-	margin: 10px 5px 0px 0px;
+.close-button {
+	margin: 5px 10px;
 	float: right;
+	cursor: pointer;
+	color: white;
 }

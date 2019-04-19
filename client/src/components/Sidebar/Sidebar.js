@@ -6,8 +6,8 @@ class Sidebar extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      status: 'open'
-    }
+      status: 'closed'
+    };
   }
 
   render() {
@@ -37,25 +37,21 @@ class Sidebar extends React.Component {
       return (
         <div>
         <div class="user_box">
-          <img class = "user_icon" src = {Carmen} />
-          Mom
+          Shut Down
         </div>
         <div class="user_box">
-          <img src = {Carmen} style = {{width: 60, height: 60}}/>
-          Dad
+          Log Out User
         </div>
-        <div class="user_box">
-          Sophie
-        </div>
-        <div class="user_box">
-          Carmen
-        </div>
-        <button type="button" class="open_close_button" onClick={() => this.handleClick()}> Close </button>
+        <button type="button" class="open_close_button" onClick={() => this.handleClick()}>
+          <i class="fab fa-windows"></i>
+        </button>
         </div>
       );
     } else {
       return (
-        <button class="open_close_button" type="button" onClick={() => this.handleClick()}> Accounts </button>
+        <button class="open_close_button" type="button" onClick={() => this.handleClick()}>
+          <i class="fab fa-windows"></i>
+        </button>
         );
     }
   }
