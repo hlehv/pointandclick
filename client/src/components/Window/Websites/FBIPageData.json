@@ -6,7 +6,18 @@
 		"weight": "197 lbs",
 		"gender": "M",
 		"crime": "Highground has been convicted with five charges of identity document forgery including California State identification, Nevada State identification, Wyoming State identification, passport, California driver’s license, and Nevada driver’s license forgery. He has two additional charges of credit card fraud and one charge of tax evasion. Highground is also currently a suspect in an ongoing investigation regarding the robbery of a Medicom, Inc. warehouse off of the I-5 highway outside Santa Clarita, California. Please contact your local FBI office or the nearest American Embassy if you have any information on this fugitive.",
-		"last seen": "St. Helena, California"
+		"last seen": "St. Helena, California",
+		"hometown": "New Rocksford"
+	}, 
+	"Harrison Highground": {
+		"name": "Harrison Stone Highground",
+		"age": "46",
+		"height": "6'2\"",
+		"weight": "197 lbs",
+		"gender": "M",
+		"crime": "Highground has been convicted with five charges of identity document forgery including California State identification, Nevada State identification, Wyoming State identification, passport, California driver’s license, and Nevada driver’s license forgery. He has two additional charges of credit card fraud and one charge of tax evasion. Highground is also currently a suspect in an ongoing investigation regarding the robbery of a Medicom, Inc. warehouse off of the I-5 highway outside Santa Clarita, California. Please contact your local FBI office or the nearest American Embassy if you have any information on this fugitive.",
+		"last seen": "St. Helena, California",
+		"hometown": "New Rocksford"
 	}, 
 	"Johan Mac-Fermer": {
 		"name": "Johan Mac-Fermer",
