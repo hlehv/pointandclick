@@ -1,0 +1,12 @@
+#log-in-info {
+	height: 100%;
+	width: 50%;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+}
+
+#user-image {
+	height: 250px;
+	vertical-align: middle;
+}
