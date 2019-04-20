@@ -13,7 +13,7 @@ class Background extends React.Component {
 
   render() {
     return (
-      <div class="Background" style={styles.bg}>
+      <div className="Background" style={styles.bg}>
       </div>
     );
   }

@@ -11,7 +11,7 @@ class Sidebar extends React.Component {
 
   render() {
     return (
-      <div class="sidebar">
+      <div className="sidebar">
         {this.renderSidebar()}
       </div>
     );
@@ -35,26 +35,26 @@ class Sidebar extends React.Component {
     if (this.state.status==='open'){
       return (
         <div>
-        <div class="user_box">
+        <div className="user_box">
           Restart
         </div>
-        <div class="user_box">
+        <div className="user_box">
           Shut Down
         </div>
-        <div class="user_box">
+        <div className="user_box">
           Log Out User
         </div>
-        <button type="button" class="open_close_button" onClick={() => this.handleClick()}>
-          <i class="fab fa-windows"></i>
+        <button type="button" className="open_close_button" onClick={() => this.handleClick()}>
+          <i className="fab fa-windows"></i>
         </button>
         </div>
       );
     } else {
       return (
-        <button class="open_close_button" type="button" onClick={() => this.handleClick()}>
-          <i class="fab fa-windows"></i>
+        <button className="open_close_button" type="button" onClick={() => this.handleClick()}>
+          <i className="fab fa-windows"></i>
         </button>
-        );
+      );
     }
   }
 }
