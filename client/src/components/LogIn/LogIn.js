@@ -7,7 +7,6 @@ class LogIn extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      input: "",
       selectedUser: "",
       dad: {password: "abc"},
       mom: {password: "abc"},
@@ -60,7 +59,7 @@ class LogIn extends React.Component {
         <img src={carmen} className="user-image" alt="user"></img>
         <div>
           {this.state.selectedUser} <br/>
-          <input type="text" onChange={this.onPasswordChange} onKeyDown={this.checkPassword}></input>
+          <input type="text" onKeyDown={this.checkPassword}></input>
         </div>
       </div>
     );
@@ -73,16 +72,10 @@ class LogIn extends React.Component {
     })
   }
 
-  onPasswordChange = (e) => {
-    this.setState({
-      input: e.target.value
-    });
-  }
-
   checkPassword = (e) => {
-    console.log(e.key);
+    const input = e.target.value;
     const selectedUser = this.state.selectedUser;
-    if (e.key === "Enter" && this.state.input === this.state[selectedUser].password) 
+    if (e.key === "Enter" && input === this.state[selectedUser].password) 
       this.props.onValidPassword();
   }
 }
