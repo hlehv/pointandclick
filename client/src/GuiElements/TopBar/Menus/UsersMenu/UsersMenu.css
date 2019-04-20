@@ -1,7 +1,33 @@
 .users-menu {
     background-color: black;
     float: left;
-    width: 30%;
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.usersContainer {
+    float: left;
+    width: 40vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.userProfileImg{
+    background: url("Carmen.png") no-repeat;
+    background-size: cover;
+    height:auto;
+    width:6vw;
+    color: red;
+}
+.profile-description{
+    color:purple;
+    width: 10vw;
+    background-color: green;
+    display:flex;
+    justify-content: flex-start;
 }
 .users-menu ul {
     list-style-type: none;

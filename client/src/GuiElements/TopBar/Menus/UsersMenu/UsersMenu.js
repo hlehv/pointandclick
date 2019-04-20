@@ -6,7 +6,12 @@ class UsersMenu extends React.Component {
         return (
             <div className="users-menu">
                 <ul>
-                    <li>User 1</li>
+                    <li className="usersContainer">
+                        <div className= "userProfileImg"/>
+                        <div className= "profile-description">User 1</div>
+                    </li>
+
+
                     <li>User 2</li>
                     <li>User 3</li>
                 </ul>
