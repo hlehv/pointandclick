@@ -1,5 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
+import Carmen from  "../../images/Carmen.png";
 
 class Sidebar extends React.Component {
   constructor(props){
@@ -35,13 +36,14 @@ class Sidebar extends React.Component {
     if (this.state.status==='open'){
       return (
         <div>
+
         <div className="user_box">
           Restart
         </div>
         <div className="user_box">
           Shut Down
         </div>
-        <div className="user_box">
+        <div className="user_box" onClick={() => this.props.logout()}>
           Log Out User
         </div>
         <button type="button" className="open_close_button" onClick={() => this.handleClick()}>

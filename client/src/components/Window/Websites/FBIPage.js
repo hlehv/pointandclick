@@ -91,6 +91,10 @@ class FBIPage extends React.Component {
 			  					<td>{data.crime}</td> 
 			  				</tr>
 			  				<tr>
+			  					<td nowrap="true">BORN IN:</td> 
+			  					<td>{data["hometown"]}</td> 
+			  				</tr>
+			  				<tr>
 			  					<td nowrap="true">LAST SEEN:</td> 
 			  					<td>{data["last seen"]}</td> 
 			  				</tr>

@@ -10,7 +10,19 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isValidPassword: false
+      isValidPassword: false,
+      files: [
+        {
+          "name": "text.txt",
+          "hidden": false,
+          "data": "Ayo this should be in the file"
+        },
+        {
+          "name": "new_file_b.txt",
+          "hidden": false,
+          "data": "same"
+        }
+      ]
     };
   }
 
@@ -35,9 +47,20 @@ class App extends React.Component {
     return (
       <div className="App">
         <Background />
-        <Sidebar /> 
+
+        { this.state.files.map( (file, id) => (
+          file.hidden ? "" : 
+          <ul className="files">
+            <li className="file">
+              <i key={id} className="far fa-file"></i>
+              <p className="filename">{file.name}</p>
+            </li>
+          </ul>
+        )) }
+
+        <Sidebar logout={this.logout}/> 
         <Dock />
-        <Window />
+        <Window fileDownloaded={this.fileDownloaded}/>
       </div>
     );
   }
@@ -47,8 +70,11 @@ class App extends React.Component {
       isValidPassword: true
     })
   }
+  logout = () => {
+    this.setState({
+      isValidPassword: false
+    });
+  }
 }
 
 export default App;
-
-

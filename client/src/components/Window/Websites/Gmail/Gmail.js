@@ -107,7 +107,7 @@ class Gmail extends React.Component {
           loggedIn: true
         })
       } else {
-        alert ("Incorrect username or password\nPassword hint: mother's maiden name")
+        alert ("Incorrect email or password. Password hint: Hometown")
       }
   }
 }

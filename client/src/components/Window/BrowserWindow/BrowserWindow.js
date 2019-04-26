@@ -4,6 +4,7 @@ import NewsSite from "../Websites/NewsSite.js"
 import FBIPage from "../Websites/FBIPage.js"
 import NameChange from "../Websites/NameChange.js"
 import Gmail from "../Websites/Gmail/Gmail.js"
+import FilePic from "../../../images/emptyfile.png"
 
 class BrowserWindow extends React.Component {
   constructor(props){
@@ -73,7 +74,7 @@ class BrowserWindow extends React.Component {
       <div class = "Bookmarks">  
         {this.state.bookmarks.map((bookmark, index) =>
         (
-          <button class="bookmark" key={index} onClick={() => this.handleBookmarksClick(index)}>{bookmark}</button>
+          <button class="bookmark" key={index} onClick={() => this.handleBookmarksClick(index)}><img src={FilePic} alt="FilePic" id="file-pic"></img><span class="bookmarktext">{bookmark}</span></button>
         ))}
       </div>
     )
