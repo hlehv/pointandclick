@@ -3,6 +3,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  left: 0;
   z-index: 500;
 }
 .apps {
@@ -16,7 +17,7 @@
   float: left;
 }
 .active {
-  border-bottom: 2.5px solid white;
+  border-bottom: 3px solid gray;
 }
 .app i {
   display: block;

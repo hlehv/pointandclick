@@ -1,7 +1,7 @@
 import React from "react";
 import "./Desktop.css";
 import Image from "../../images/FamilyPortrait.png";
-import { Sidebar, Dock, TopBar } from "../../GuiElements";
+import { Dock, TopBar } from "../../GuiElements";
 
 const styles = {
     background: {

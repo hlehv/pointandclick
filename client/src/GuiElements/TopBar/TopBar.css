@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    left: 0;
     z-index: 500;
 }
 .top-bar .tabs {
@@ -10,12 +11,12 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #000;
+    background-color: white;
 }
 .top-bar .tab {
     float: left;
     display: block;
-    color: white;
+    color: gray;
     text-align: center;
     padding: 10px 16px 10px 16px;
     text-decoration: none;
@@ -24,7 +25,7 @@
     border-bottom: 2.5px solid white;
 }
 .top-bar li:hover {
-    background-color: #333;
+    background-color: #EEE;
     cursor: pointer;
 }
 .open-menu {

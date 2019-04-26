@@ -3,9 +3,6 @@ import Desktop from "./Screens/Desktop/Desktop";
 import LogIn from "./Screens/LogIn/LogIn";
 import "./App.css";
 
-
-
-
 class App extends React.Component {
   state = {
     loggedIn: true
