@@ -2,6 +2,8 @@ import React from "react";
 import "./LogIn.css"
 import carmen from "../../images/Carmen.png";
 import sophie from "../../images/Sophie.png";
+import sophieLocked from "../../images/SophieLocked.png";
+import carmenLocked from "../../images/CarmenLocked.png";
 
 class LogIn extends React.Component {
   constructor(props) {
@@ -9,10 +11,10 @@ class LogIn extends React.Component {
     this.state = {
       input: "",
       selectedUser: "",
-      dad: {password: "abc", locked: true},
-      mom: {password: "abc", locked: true},
-      carmen: {password: "abc", locked: true},
-      sophie: {password: "brown", locked: false}
+      dad: {password: "lansing", locked: false, hint: "Capital of Michigan", name: "Dad"},
+      mom: {password: "abc", locked: true, name: "Mom"},
+      carmen: {password: "abc", locked: true, name: "Carmen"},
+      sophie: {password: "brown", locked: true, name: "Sophie", hint: "My hair color :)"}
     };
   }
 
@@ -24,28 +26,41 @@ class LogIn extends React.Component {
   }
 
   renderAllAccounts() {
+    var carmenImage = carmen;
+    if (this.state.carmen.locked)
+      carmenImage = carmenLocked;
+    var sophieImage = sophie;
+    if (this.state.sophie.locked)
+      sophieImage = sophieLocked;
+    var dadImage = sophie;
+    if (this.state.dad.locked)
+      dadImage = sophieLocked;
+    var momImage = carmen;
+    if (this.state.mom.locked)
+      momImage = carmenLocked;
+
     return (
       <div id="accounts">
         <div className="user" onClick={() => this.selectUser("dad")}>
-          <img src={carmen} className="user-image" alt="dad"></img>
+          <img src={dadImage} className="user-image" alt="dad"></img>
           <div>
             Dad  (David)
           </div>
         </div>
         <div className="user" onClick={() => this.selectUser("mom")}>
-          <img src={sophie} className="user-image" alt="mom"></img>
+          <img src={momImage} className="user-image" alt="mom"></img>
           <div>
             Mom (Melissa)
           </div>
         </div>
         <div className="user" onClick={() => this.selectUser("carmen")}>
-          <img src={carmen} className="user-image" alt="carmen"></img>
+          <img src={carmenImage} className="user-image" alt="carmen"></img>
           <div>
             Carmen 
           </div>
         </div>
         <div className="user" onClick={() => this.selectUser("sophie")}>
-          <img src={sophie} className="user-image" alt="sophie"></img>
+          <img src={sophieImage} className="user-image" alt="sophie"></img>
           <div>
             Sophie
           </div>
@@ -57,10 +72,10 @@ class LogIn extends React.Component {
   renderSelectedAccount() {
     return (
       <div className="selected-user">
-        <img src={carmen} className="user-image" alt="user"></img>
+        <img src={sophie} className="user-image" alt="user"></img>
         <div>          
           {this.state.selectedUser} <br/>
-          Password hint: My hair color :)<br/>
+          Password hint: {this.state[this.state.selectedUser].hint} <br/>
           <input type="text" onChange={this.onPasswordChange} onKeyDown={this.checkPassword}></input>
         </div>
       </div>
