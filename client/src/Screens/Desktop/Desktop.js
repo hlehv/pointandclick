@@ -16,8 +16,9 @@ class Desktop extends React.Component {
         return (
             <div className="desktop">
                 <div className="background" style={styles.background}></div>
+                
                 {/* <Sidebar /> */}
-                <TopBar />
+                <TopBar logout={this.props.logout}/>
                 <Dock openApplication={this.startApplication} closeApplication={this.closeApplication}/>
                 { this.state.openApp }
             </div>

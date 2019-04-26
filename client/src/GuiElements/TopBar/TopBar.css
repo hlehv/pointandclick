@@ -24,6 +24,9 @@
 .top-bar .active {
     border-bottom: 2.5px solid white;
 }
+.top-bar .logout:hover {
+    text-decoration: underline;
+}
 .top-bar li:hover {
     background-color: #EEE;
     cursor: pointer;

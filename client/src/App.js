@@ -10,7 +10,7 @@ class App extends React.Component {
   
   render() {
     if(this.state.loggedIn){
-      return <Desktop />;
+      return <Desktop logout={this.logout}/>;
     } else {
       return this.renderLogIn();
     }
@@ -28,6 +28,11 @@ class App extends React.Component {
     this.setState({
       loggedIn: true
     })
+  }
+  logout = () => {
+    this.setState({
+      loggedIn: false
+    });
   }
 
 }

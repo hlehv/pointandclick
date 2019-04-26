@@ -20,8 +20,18 @@ class Dock extends React.Component {
     );
   }
   openApplication = (component, app) => {
-    component.target.className.includes("active") ?
-      component.target.className += "" : component.target.className += " active";
+    if(this.state.currentlyOpen != null) {
+      if(this.state.currentlyOpen.className.includes("active")) {
+        this.state.currentlyOpen.className = this.state.currentlyOpen.className.replace("active", "");//component.target.className += "";
+        component.target.className += " active";
+
+        //this.state.currentlyOpen
+        console.log("REMOVING INDICATOR ON CURRENTLY OPEN APP");
+      } else {
+        console.log("NO APPS OPEN");
+      }
+    }
+    
     this.setState({ currentlyOpen: component.target });
     this.props.openApplication(app);
   }

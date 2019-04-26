@@ -6,9 +6,9 @@ class UsersMenu extends React.Component {
         return (
             <div className="users-menu">
                 <ul>
-                    <li>User 1</li>
-                    <li>User 2</li>
-                    <li>User 3</li>
+                    <li>User 1 | <span className="logout" onClick={() => this.props.logout()}>Logout</span></li>
+                    <li>User 2 | <span className="logout" onClick={() => this.props.logout()}>Logout</span></li>
+                    <li>User 3 | <span className="logout" onClick={() => this.props.logout()}>Logout</span></li>
                 </ul>
             </div>
         );

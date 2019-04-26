@@ -5,7 +5,7 @@ import { UsersMenu } from "./Menus";
 class TopBar extends React.Component {
     state = {
         tabs: {
-            "Users": <UsersMenu />
+            "Users": <UsersMenu logout={this.props.logout} />
         },
         openMenu: null
     };
