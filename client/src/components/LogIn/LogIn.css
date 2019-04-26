@@ -1,12 +1,30 @@
-#log-in-info {
-	height: 100%;
-	width: 50%;
+#accounts {
+	/*height: 100%;*/
+	width: 1000px;
 	margin: auto;
-	padding: 20px;
+}
+
+.user, .selected-user {
+	height: 100%;
 	text-align: center;
 }
 
-#user-image {
-	height: 250px;
-	vertical-align: middle;
+.user {
+	display: inline-block;
+	margin: 20px;
+	cursor: pointer;
+	transition: transform .1s;
+}
+
+.user:hover {
+	transform: scale(1.05);
+}
+
+.selected-user {
+	width: 50%;
+	margin: auto;
+}
+
+.user-image {
+	height: 200px;
 }

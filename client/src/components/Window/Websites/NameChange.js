@@ -8,7 +8,7 @@ class NameChange extends React.Component {
   		  		How to change your name: Follow these steps
   		  		<ul>
 	  		  		<li> Choose your new name </li>
-	  		  		<li> Post your name change in the local newspaper 3 weeks in a row </li>
+	  		  		<li> Wait one month for change to process </li>
   		  		</ul>
   		  		<img src={NameChangePic} alt = "namechange" id="namechangepic"></img>
   			</div>
