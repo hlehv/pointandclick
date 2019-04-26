@@ -6,7 +6,7 @@ class LogIn extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      password: "abc",
+      password: "brown",
       input: ""
     };
   }
@@ -17,6 +17,7 @@ class LogIn extends React.Component {
         <img src={userImage} id="user-image"></img>
         <div>
           Sophie <br/>
+          Password hint: My hair color :)<br/>
           <input type="text" onChange={this.onPasswordChange} onKeyDown={this.checkPassword}></input>
         </div>
       </div>
