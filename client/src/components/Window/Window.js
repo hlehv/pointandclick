@@ -39,7 +39,7 @@ class Window extends React.Component {
       return (
         <div class="Window">
           {this.renderTopBar()}
-          <BrowserWindow />
+          <BrowserWindow fileDownloaded={this.props.fileDownloaded}/>
           {/*<FileViewer/>*/}
         </div>
       );
