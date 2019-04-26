@@ -35,7 +35,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Background />
-        <Sidebar /> 
+        <Sidebar logout={this.logout}/> 
         <Dock />
         <Window />
       </div>
@@ -47,8 +47,11 @@ class App extends React.Component {
       isValidPassword: true
     })
   }
+  logout = () => {
+    this.setState({
+      isValidPassword: false
+    });
+  }
 }
 
 export default App;
-
-

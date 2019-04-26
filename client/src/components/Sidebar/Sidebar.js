@@ -43,7 +43,7 @@ class Sidebar extends React.Component {
         <div className="user_box">
           Shut Down
         </div>
-        <div className="user_box">
+        <div className="user_box" onClick={() => this.props.logout()}>
           Log Out User
         </div>
         <button type="button" className="open_close_button" onClick={() => this.handleClick()}>
