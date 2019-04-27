@@ -1,14 +1,11 @@
-.sidebar{
+.sidebar {
   z-index: 1;
-  /*width: 75px;*/
   position: absolute;
   left: 0;
   bottom: 0;
-
-  /*background-color: white;*/
-  /*overflow-x: hidden;*/
-  /*padding-top: 20px;*/
+  padding: 0px;
 }
+
 .user_box {
   display: block;
   border: 2px solid gray;
@@ -20,13 +17,18 @@
   background: lightgray;
 }
 
-.open_close_button{
+.user_box:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.open_close_button {
   height: var(--dock-height);
-  width: 60px;
-  text-align: center;
+  width: var(--sidebar-width);
   background-color: lightgray;
-  /*text-decoration: none;*/
+  border-radius: 0px;
   font-size: 15px;
-  padding: 15px 0px 15px;
+  
+  text-align: center;
 }
 

@@ -2,6 +2,7 @@
   overflow: hidden;
   background-color: white;
   position: fixed;
+  left: var(--sidebar-width);
   bottom: 0;
   height: var(--dock-height);
   width: 100%;

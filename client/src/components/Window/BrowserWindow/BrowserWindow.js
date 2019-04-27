@@ -74,7 +74,10 @@ class BrowserWindow extends React.Component {
       <div class = "Bookmarks">  
         {this.state.bookmarks.map((bookmark, index) =>
         (
-          <button class="bookmark" key={index} onClick={() => this.handleBookmarksClick(index)}><img src={FilePic} alt="FilePic" id="file-pic"></img><span class="bookmarktext">{bookmark}</span></button>
+          <button class="bookmark" key={index} onClick={() => this.handleBookmarksClick(index)}>
+            <img src={FilePic} alt="FilePic" id="file-pic"></img>
+            <span class="bookmarktext">{bookmark}</span>
+          </button>
         ))}
       </div>
     )

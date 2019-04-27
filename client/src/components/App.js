@@ -57,8 +57,8 @@ class App extends React.Component {
             </li>
           </ul>
         )) }
-
-        <Sidebar logout={this.logout}/> 
+ 
+        <Sidebar logout={this.logout}/>
         <Dock />
         <Window fileDownloaded={this.fileDownloaded}/>
       </div>

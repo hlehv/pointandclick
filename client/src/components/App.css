@@ -1,9 +1,12 @@
 :root {
 	--dock-height: 50px; 
+	--sidebar-width: 50px;
 }
 
 body {
 	font-family: 'Gloria Hallelujah', cursive;
+	margin: 0px;
+	padding: 0px;
 }
 
 i {
@@ -28,18 +31,26 @@ input {
 input:focus, button:focus {
 	outline: none;
 }
+
+.app {
+	padding: 0px;
+}
+
 .files {
 	display: inline;
 	list-style-type: none;
 	margin: 0; padding: 0;
 }
+
 .files li {
 	float: left;
 	margin-left: 25px;
 }
+
 .file:hover {
 	cursor: pointer;
 }
+
 .file .filename {
 	color: gray;
 	margin-top: -10px;
